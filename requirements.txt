@@ -1,0 +1,13 @@
+torch
+smplx
+numpy == 1.23.1
+rerun-sdk
+matplotlib
+scipy
+chumpy
+tqdm
+pyyaml
+tensorboard
+trimesh
+wandb
+transforms3d

@@ -1,0 +1,74 @@
+# vscode
+.vscode
+.vs
+.venv
+
+# macos
+.DS_STORE
+
+# tensorboard and wandb
+runs/
+wandb/
+test_wandb.py
+
+# test
+test.py
+
+# python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# pytorch
+*.pt
+*.pth
+
+# binary
+*.rrd
+*.dll
+*.mp4
+*.avi
+*.jpg
+*.png
+*.bmp
+*.zip
+*.npy
+*.npz
+*.pkl
+
+# Data
+*.obj
+*.csv
+*.npz
+
+# temp
+*.key
+*.pdf
+*.pptx
+*.docx
+tb-logger
+checkpoint
+temp*
+
+tests/
+experiments/
+try*/
+video*/
+!VideoProcess/
+out/
+DexterHand
+DexterHandInternal
+DexterHand-rerun
+BenchMark
+DownstreamTask
+
+*.egg-info
+chumpy*
+*.ttf
+*.TTF
+AGENTS.md
+
+
+!MocapSystem/figures/
+!MocapSystem/figures/*
