@@ -72,3 +72,4 @@ AGENTS.md
 
 !MocapSystem/figures/
 !MocapSystem/figures/*
+!Dataset/RubiksCube_00-fps_20.npz

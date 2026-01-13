@@ -27,7 +27,31 @@ HandReconstruction
             └── MANO_LEFT.pkl
 ```
 
+### Dataset Visualization
+
+We use [rerun](https://www.rerun.io/) to visualize the result.
+
+To visualize the demonstration dataset, run:
+
+```bash
+python -m Dataset.visualize --data_path Dataset/RubiksCube_00-fps_20.npz
+```
+
+To visualize the dataset with hand local coordinates (hand is not moving in global coordinates), run:
+
+```bash
+python -m Dataset.visualize --data_path Dataset/RubiksCube_00-fps_20.npz --use_hand_local_coordinates True
+```
+
+To visualize only a time range (in seconds), use `--start` / `--end`:
+
+```bash
+python -m Dataset.visualize --data_path Dataset/RubiksCube_00-fps_20.npz --start 5 --end 10
+```
+
 ### Download Dataset
+
+**Full dataset is coming soon, please stay tuned!**
 
 Download through [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/guides/cli), `FILE_NAME` is the name of the dataset file, e.g. `RubiksCube_00-fps_20.npz`:
 
@@ -42,28 +66,6 @@ git clone git@hf.co:datasets/pku-mocca/DexterHand
 cd DexterHand
 git lfs pull
 cd ../
-```
-
-### Dataset Visualization
-
-We use [rerun](https://www.rerun.io/) to visualize the result.
-
-For example, to visualize the dataset, run:
-
-```bash
-python -m Dataset.visualize --data_path <PATH_TO_NPZ_DATA>
-```
-
-To visualize the dataset with hand local coordinates (hand is not moving in global coordinates), run:
-
-```bash
-python -m Dataset.visualize --data_path <PATH_TO_NPZ_DATA> --use_hand_local_coordinates True
-```
-
-To visualize only a time range (in seconds), use `--start` / `--end`:
-
-```bash
-python -m Dataset.visualize --data_path <PATH_TO_NPZ_DATA> --start 5 --end 10
 ```
 
 ## Repo Structure
